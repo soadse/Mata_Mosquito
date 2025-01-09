@@ -17,17 +17,9 @@ body {
     background-size: cover;
     overflow: hidden;
 }
-.logoInicio {
-    width: 250px;
-    height: 250px;
-    background-image: url(imagens/game.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
 .painel {
     position: absolute;
-    width: 150px;
+    width: 180px;
     padding: 10px;
     bottom: 0px;
     left: 0px;
