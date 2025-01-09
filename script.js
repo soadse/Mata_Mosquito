@@ -1,5 +1,5 @@
 let cronometro = document.querySelector('.tempo')
-let tempo = 61;
+let tempo = 30;
 let vidas = 1
 let largura = window.innerWidth;
 let altura = window.innerHeight;
