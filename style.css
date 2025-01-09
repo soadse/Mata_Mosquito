@@ -15,7 +15,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    overflow: hidden;
 }
 .painel {
     position: absolute;
