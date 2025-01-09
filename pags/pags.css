@@ -1,0 +1,38 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+img {
+    width: 250px;
+    filter: drop-shadow(0px 0px 5px black);
+}
+a > button {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #22252B;
+    color: #fff;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 5px black;
+}
+a > button:hover {
+    background-color: #3a404b;
+}

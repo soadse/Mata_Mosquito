@@ -1,0 +1,66 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.logoInicio {
+    width: 250px;
+    height: 250px;
+    background-image: url(imagens/game.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.painel {
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 0px 10px 0px 0px;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+.painel > .vidas > .coracao {
+    padding: 5px;
+}
+.painel > p > .tempo {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.mosquito1 {
+    position: absolute;
+    width: 50px;
+}
+.mosquito2 {
+    position: absolute;
+    width: 75px;
+}
+.mosquito3 {
+    position: absolute;
+    width: 100px;
+}
+.ladoA {
+    transform: scaleX(-1);
+}
+.ladoB {
+    transform: scaleX(1);
+}
+
+
