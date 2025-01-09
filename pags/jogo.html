@@ -16,7 +16,15 @@
             <img class="coracao" id="c2" src="../imagens/coracao_cheio.png" alt="">
             <img class="coracao" id="c3" src="../imagens/coracao_cheio.png" alt="">
         </div>
+        <audio id="audioMosquito" src="../mosca.mp3"></audio>
         <p>Tempo restante: <span class="tempo">30</span></p>
     </div>
+
+    <script>
+        window.onload = (() => {
+            let audio = document.getElementById('audioMosquito');
+            audio.play();
+        })
+    </script>
 </body>
 </html>
