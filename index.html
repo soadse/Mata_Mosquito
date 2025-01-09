@@ -5,11 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mata Mosquito</title>
     <link rel="shortcut icon" href="imagens/mosquito.ico" type="image/x-icon">
-    <link rel="stylesheet" href="pags/pags.css">
-    <link rel="stylesheet" href="pags/global.css">
+    <link rel="stylesheet" href="estilos/pags.css">
+    <link rel="stylesheet" href="estilos/global.css">
+    <style>
+        select {
+            margin-bottom: 20px;
+            height: 30px;
+            border-radius: 5px;
+            color: #444;
+            text-align: center;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+        }
+    </style>
 </head>
 <body>
     <img src="imagens/game.png" alt="">
-    <a href="pags/jogo.html"><button>Iniciar</button></a>
+    <select id="nivel">
+        <option value="">--Selecione o nível--</option>
+        <option value="normal">Normal</option>
+        <option value="dificil">Difícil</option>
+        <option value="hard">Hard</option>
+    </select>
+    <button id="iniciar">Iniciar</button>
+    <a href="pags/jogo.html"></a>
+
+    <script>
+        let iniciar = document.getElementById('iniciar')
+        iniciar.addEventListener('click', () => {
+            let nivel = document.getElementById('nivel').value
+            if(nivel === ''){
+                alert('Selecione um nível para iniciar o jogo')
+                return false
+            } 
+            alert(nivel)
+            
+        })
+        
+        let janela;
+        iniciar.addEventListener('click', () => {
+            janela = open('pags/jogo.html', '_self')
+        })
+    </script>
 </body>
 </html>

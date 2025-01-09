@@ -20,7 +20,7 @@ img {
     width: 250px;
     filter: drop-shadow(0px 0px 5px black);
 }
-a > button {
+button {
     width: 100px;
     height: 30px;
     margin-bottom: 10px;
@@ -32,6 +32,6 @@ a > button {
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0px 0px 5px black;
 }
-a > button:hover {
+button:hover {
     background-color: #3a404b;
 }

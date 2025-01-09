@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mata Mosquito</title>
     <link rel="shortcut icon" href="../imagens/mosquito.ico" type="image/x-icon">
-    <link rel="stylesheet" href="pags.css">
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="../estilos/pags.css">
+    <link rel="stylesheet" href="../estilos/global.css">
 </head>
 <body>
-    <img src="../imagens/vitoria.png" alt="">
-    <a href="jogo.html"><button>Reiniciar</button></a>
-    <a href="../index.html"><button>Tela Inicial</button></a>
+    <img src="../imagens/vitoria.png">
+    <button id="reiniciarWin">Reiniciar</button>
+    <button id="iniciarWin">Tela Inicial</button>
+    <script>
+        let janela;
+        let reiniciarWin = document.getElementById('reiniciarWin')
+        let iniciarWin = document.getElementById('iniciarWin')
+
+        reiniciarWin.addEventListener('click', () => {
+            janela = open('jogo.html', '_self')
+        })
+        iniciarWin.addEventListener('click', () => {
+            open("../index.html", '_self')
+        }) 
+    </script>
 </body>
 </html>
