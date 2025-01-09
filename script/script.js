@@ -4,6 +4,10 @@ let vidas = 1
 let largura = window.innerWidth;
 let altura = window.innerHeight;
 
+let nivel = window.location.search
+nivel = nivel.replace('?', '')
+
+
 let intervalo = setInterval(() => {
     tempo --
     cronometro.innerHTML = tempo;
@@ -58,9 +62,19 @@ function ladoMosquito(){
 }
 ladoMosquito()
 
-setInterval(()=>{
-    posicaoRandomica()
-}, 2000)
+if(nivel === 'normal'){
+    setInterval(()=>{
+        posicaoRandomica()
+    }, 1500)
+} else if(nivel === 'dificil'){
+    setInterval(()=>{
+        posicaoRandomica()
+    }, 1000)
+} else {
+    setInterval(()=>{
+        posicaoRandomica()
+    }, 750)
+}
 
 
 

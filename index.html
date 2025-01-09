@@ -36,14 +36,11 @@
                 alert('Selecione um nível para iniciar o jogo')
                 return false
             } 
-            alert(nivel)
+            window.location.href = 'pags/jogo.html?' + nivel
             
         })
         
-        let janela;
-        iniciar.addEventListener('click', () => {
-            janela = open('pags/jogo.html', '_self')
-        })
+        
     </script>
 </body>
 </html>
